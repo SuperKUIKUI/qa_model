@@ -137,7 +137,7 @@ def ask(question):
 
 # 交互部分保持不变
 if __name__ == "__main__":
-    print("改进版多级检索问答系统已启动，输入 exit/quit/q 退出")
+    print("问答系统已启动，输入 exit/quit/q 退出")
     print("-" * 50)
     
     while True:
@@ -155,3 +155,4 @@ if __name__ == "__main__":
         
 
         print()  # 空行
+
