@@ -94,7 +94,7 @@ def multi_level_retrieval(question, top_k_docs=3, top_k_paras=2, top_k_sents=3):
             best_contexts.append({
                 'title': doc['title'],
                 'content': best_sentences,
-                'score': float(D_para[0][rank])  # 用 rank，而不是 para_idx
+                'score': float(D_para[0][rank])  
             })
 
     best_contexts.sort(key=lambda x: x['score'])
@@ -153,4 +153,5 @@ if __name__ == "__main__":
         except Exception as e:
             print(f"机器人: 出错了 - {str(e)}")
         
+
         print()  # 空行
